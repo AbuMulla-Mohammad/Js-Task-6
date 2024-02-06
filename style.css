@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+}
+.overlay{
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.436);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+.onShow{
+    padding: 20px;
+    width: 300px;
+}
+header{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    background-color: teal;
+}
+header .showButton{
+    position: absolute;
+    right: 10px;
+}
+.aside{
+    z-index: 2;
+    overflow: hidden;
+    width: 0;
+    background-color: #eee;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    transition: all 0.5s;
+}
+button{
+    padding: 6px 3px;
+    border:none;
+    border-radius: 6px;
+    background-color: white;
+    transition: 0.5s all;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #bbb;
+    
+}
+.content{
+    height: 1500px;
+}
